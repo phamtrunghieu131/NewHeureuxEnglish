@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HeureuxEnglish</string>
+    <string name="item_homepage">Trang chủ</string>
+    <string name="item_learnedWords">Từ đã học</string>
+    <string name="item_game">Trò chơi</string>
+    <string name="item_profile">Hồ sơ</string>
+    <string name="channel_name">testing</string>
+    <string name="channel_description">testing notification</string>
+</resources>

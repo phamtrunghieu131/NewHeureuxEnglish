@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "341269220517",
+    "firebase_url": "https://heureuxenglish.firebaseio.com",
+    "project_id": "heureuxenglish",
+    "storage_bucket": "heureuxenglish.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341269220517:android:72f79449ff700fcc69514c",
+        "android_client_info": {
+          "package_name": "com.example.heureuxenglish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341269220517-ad7lg0hi7ggbp4afum764dr87a933dsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.heureuxenglish",
+            "certificate_hash": "754c8d5afec4bb02b81eb20d539fea9711778c81"
+          }
+        },
+        {
+          "client_id": "341269220517-v9e9b275f8jkngjjk4rqa84tmqjol5mq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4bJHUucvZf8G4fWp2YKiz3YXF4AwgDVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341269220517-v9e9b275f8jkngjjk4rqa84tmqjol5mq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
