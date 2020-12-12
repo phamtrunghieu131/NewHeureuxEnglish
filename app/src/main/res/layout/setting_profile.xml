@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#9C27B0"
+        android:background="@color/light_blue"
         android:paddingBottom="5dp"
         android:paddingTop="5dp">
         <ImageView
@@ -26,10 +26,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cài đặt"
-                android:textSize="20dp"
+                android:textSize="30dp"
                 android:textStyle="bold"
                 android:layout_centerInParent="true"
-                android:textColor="#ffffff">
+                android:textColor="@color/color_text_1">
 
             </TextView>
 
@@ -41,32 +41,27 @@
             android:textStyle="bold"
             android:background="@android:color/transparent"
             android:layout_alignParentRight="true"
-            android:textColor="#ffffff">
+            android:textColor="@color/color_text_1">
 
         </Button>
 
 
     </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:background="#f2f2f2">
 
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f2f2f2"
         android:gravity="center_horizontal"
         android:padding="10dp">
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/icon">
 
-    </ImageView>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon">
 
-</LinearLayout>
+        </ImageView>
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1px"
@@ -212,6 +207,7 @@
 
         <Button
             android:id="@+id/btnLogout"
+            android:background="@drawable/button_background"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -219,6 +215,8 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
             android:text="Đăng xuất"
+            android:textColor="@color/white"
+            android:textSize="20dp"
             >
         </Button>
     </RelativeLayout>

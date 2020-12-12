@@ -15,10 +15,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="Những từ bạn đã học"
+            android:textColor="@color/color_text_1"
             android:textSize="30sp"
-            android:textColor="@color/black"
-            android:layout_centerInParent="true"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

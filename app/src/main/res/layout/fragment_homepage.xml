@@ -65,7 +65,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background">
+        android:background="@color/white">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -95,6 +96,7 @@
                 android:textSize="30sp"
                 app:layout_constraintStart_toStartOf="@+id/hoc_tu_moi"
                 app:layout_constraintTop_toTopOf="@+id/hoc_tu_moi" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -133,6 +135,7 @@
                 android:textSize="30sp"
                 app:layout_constraintStart_toStartOf="@+id/on_tap"
                 app:layout_constraintTop_toBottomOf="@+id/hoc_tu_moi" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -172,21 +175,23 @@
                 android:textSize="30sp"
                 app:layout_constraintStart_toStartOf="@+id/muc_tieu"
                 app:layout_constraintTop_toBottomOf="@+id/on_tap" />
+
             <TextView
                 android:id="@+id/muc_tieu_hien_tai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15"
                 android:layout_marginTop="10dp"
+                android:text="15"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/muc_tieu_text_view"
                 app:layout_constraintTop_toBottomOf="@+id/muc_tieu_text_view" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" từ/ngày"
                 android:layout_marginTop="10dp"
+                android:text=" từ/ngày"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/muc_tieu_hien_tai"
@@ -225,11 +230,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:layout_constraintStart_toStartOf="@+id/thong_bao_text_view"
-                app:layout_constraintTop_toBottomOf="@+id/thong_bao_text_view"
                 android:text="Bật nhắc nhở học tập mỗi ngày"
+                android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textColor="@color/white"/>
+                app:layout_constraintStart_toStartOf="@+id/thong_bao_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/thong_bao_text_view" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
