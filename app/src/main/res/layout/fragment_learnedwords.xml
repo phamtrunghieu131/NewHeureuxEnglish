@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:id="@+id/toobar_learnedWord"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Những từ bạn đã học"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/list_learnedWords"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toobar_learnedWord"/>
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/thongbao_learnedWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="72dp"
-        android:text="learned words"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_centerInParent="true"
+        android:text="Hình như bạn chưa học từ nào!"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

@@ -90,7 +90,9 @@ public class NotificationActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     Word word = snapshot.getValue(Word.class);
-                    newWordText.setText(word.getWordInEnglish()+": "+word.getWordInVietnamese() );
+                    newWordText.setText(word.getWordInEnglish()+": "+word.getWordInVietnamese());
+                    FirebaseDatabase.getInstance().getReference("learnedWords").child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                            .push().setValue(word);
                 }
 
                 @Override

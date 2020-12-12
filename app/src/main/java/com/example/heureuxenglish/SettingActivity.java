@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
@@ -17,6 +18,7 @@ import java.util.Calendar;
 public class SettingActivity extends AppCompatActivity {
 
     ImageView changePasswordImg,backButton;
+    Button logOutButton;
     Switch notificationSwitch;
     Calendar calendar;
     AlarmManager alarmManager;
@@ -79,11 +81,20 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-    }
+        logOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
+    }
+        
     private void creat() {
         changePasswordImg = findViewById(R.id.change_passwordImg);
         notificationSwitch = findViewById(R.id.turnOn_switch);
         backButton = findViewById(R.id.back_button_inSetting);
+        logOutButton = findViewById(R.id.btnLogout);
     }
 }
