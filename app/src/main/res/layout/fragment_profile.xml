@@ -253,8 +253,40 @@
 
         </Spinner>
     </RelativeLayout>
-    <view class="androidx.appcompat.app.AlertController$RecycleListView"
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </view>
+        android:layout_height="wrap_content"
+        android:background="@color/blue_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số ngày học"
+            android:textColor="@color/black"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>

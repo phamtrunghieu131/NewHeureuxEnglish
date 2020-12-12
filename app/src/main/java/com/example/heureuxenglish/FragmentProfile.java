@@ -13,6 +13,7 @@ import androidx.core.widget.ContentLoadingProgressBar;
 
 import android.app.Fragment;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,6 +31,9 @@ public class FragmentProfile extends Fragment {
     ImageView settingImg;
     DatabaseReference mDatabase;
     int currentPoint;
+    ArrayList<User> listUser = new ArrayList<User>();
+    UserAdapter adapter;
+    ListView listView;
     ContentLoadingProgressBar progressBar;
 
     @Nullable
@@ -46,6 +50,7 @@ public class FragmentProfile extends Fragment {
         nextLvText = view.findViewById(R.id.nextLv);
         progressBar = view.findViewById(R.id.expProgressBar);
         settingImg = view.findViewById(R.id.setting_button);
+        listView = view.findViewById(R.id.list_user);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
@@ -65,6 +70,35 @@ public class FragmentProfile extends Fragment {
                 nextLvText.setText(level+1+"");
                 progressBar.setProgress(100-pointToUpLv);
             }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        mDatabase.child("user").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    listUser.clear();
+                    for(DataSnapshot dss : snapshot.getChildren()){
+                        User user = dss.getValue(User.class);
+                        listUser.add(user);
+                    }
+                    for(int i=0; i<listUser.size() ; i++){
+                        for (int j = i+1; j<listUser.size(); j++){
+                            if(listUser.get(i).getPoint() < listUser.get(j).getPoint()){
+                                User user = listUser.get(i);
+                                listUser.set(i,listUser.get(j));
+                                listUser.set(j,user);
+                            }
+                        }
+                    }
+                }
+                adapter = new UserAdapter(getActivity(),R.layout.user_element,listUser);
+                listView.setAdapter(adapter);
+            }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 

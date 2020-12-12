@@ -65,7 +65,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@drawable/background">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -81,7 +81,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/hoc_tu_moi_text_view"
@@ -107,8 +108,7 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="@+id/hoc_tu_moi"
-                app:layout_constraintTop_toBottomOf="@+id/hoc_tu_moi_text_view" />
-            />
+                app:layout_constraintTop_toBottomOf="@+id/hoc_tu_moi_text_view" />/>
 
             <ImageView
                 android:id="@+id/on_tap"
