@@ -15,7 +15,7 @@
     <item
         android:id="@+id/item_game"
         android:title="@string/item_game"
-        android:icon="@drawable/dictionary">
+        android:icon="@drawable/games">
     </item>
 
     <item

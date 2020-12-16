@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuestRoomActivity">
+
+    <TextView
+        android:id="@+id/guestRoom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tên phòng:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/guestRoom_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="tên phòng"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/guestRoom_title"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/guestRoom_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Chủ phòng"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Bạn"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/guestRoom_hostName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_host"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="pham trung hieu"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/guestRoom_hostLearnedWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_hostName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:hint="từ đã học:"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/guestRoom_hostHardDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_hostLearnedWord"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Số ngày học:"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/guestRoom_hostPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_hostHardDay"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:hint="diem:"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="131dp"
+        app:srcCompat="@drawable/competition"
+        android:layout_below="@id/guestRoom_name"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/guestRoom_guessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_host"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="20sp"
+        android:hint="luong van tu"/>
+
+    <TextView
+        android:id="@+id/guestRoom_guessLearnedWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_hostName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="20sp"
+        android:text="tu da hoc"/>
+
+    <TextView
+        android:id="@+id/guestRoom_guessHardDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_hostLearnedWord"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="20sp"
+        android:text="so ngay hoc"/>
+
+    <TextView
+        android:id="@+id/guestRoom_guessPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guestRoom_hostHardDay"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="230dp"
+        android:textSize="20sp"
+        android:text="diem"/>
+
+    <Button
+        android:id="@+id/guestRoom_readyButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Sẵn sàng"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"/>
+
+    <ImageView
+        android:id="@+id/guestRoom_closeButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/close"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

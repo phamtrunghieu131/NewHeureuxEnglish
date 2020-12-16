@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewPasswordActivity"></activity>
+        <activity android:name=".GameNotificationActivity"></activity>
+        <activity android:name=".InGameActivity" />
+        <activity android:name=".GuestRoomActivity" />
+        <activity android:name=".ListRoomActivity" />
+        <activity android:name=".HostRoomActivity" />
+        <activity android:name=".NewPasswordActivity" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".QuestionTwoActivity" />
         <activity android:name=".QuestionActivity" />
@@ -24,6 +29,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+
         <receiver android:name=".AlarmReceiver" />
     </application>
 

@@ -22,8 +22,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int number = intent.getIntExtra("number",1);
 
-        if(number == 4){
-            getFragmentManager().beginTransaction().add(R.id.frameLayout_container,new FragmentProfile()).commit();
+
+        if(number == 3){
+            getFragmentManager().beginTransaction().replace(R.id.frameLayout_container,new FragmentGame()).commit();
+            bottomNavigationView.setSelectedItemId(R.id.item_game);
+        }
+        else if(number == 4){
+            getFragmentManager().beginTransaction().replace(R.id.frameLayout_container,new FragmentProfile()).commit();
+            bottomNavigationView.setSelectedItemId(R.id.item_profile);
         }else {
             getFragmentManager().beginTransaction().replace(R.id.frameLayout_container,new FragmentHomePage()).commit();
         }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListRoomActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_listRoom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách phòng"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/closeButton_listRoom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/close"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/list_room"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="226dp"
+        android:layout_below="@id/toolbar_listRoom"/>
+</RelativeLayout>
