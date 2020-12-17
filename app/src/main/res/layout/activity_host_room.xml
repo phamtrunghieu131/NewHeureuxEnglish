@@ -12,10 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="Tên phòng:"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/hostRoom_name"
@@ -35,19 +35,19 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:text="Chủ phòng"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
-        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
         android:text="Đối thủ"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_alignParentRight="true"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/hostRoom_hostName"
@@ -137,10 +137,13 @@
         android:id="@+id/hostRoom_startButton"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Bắt đầu"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_background"
+        android:text="Bắt đầu"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/closeButton"

@@ -10,51 +10,54 @@
         android:id="@+id/host_countQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chủ phòng trả lời được:"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="Chủ phòng trả lời được:"
+        android:textColor="@color/color_text_1"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/host_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/host_countQuestion"
-        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/guest_countQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đối thủ trả lời được:"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="Đối thủ trả lời được:"
+        android:textColor="@color/color_text_1"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/guest_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/guest_countQuestion"
-        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/game_confirmButton"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:text="Xác nhận"/>
+        android:background="@drawable/button_background"
+        android:text="Xác nhận"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
 </RelativeLayout>

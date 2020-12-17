@@ -11,20 +11,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="Tên phòng:"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/guestRoom_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="tên phòng"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/guestRoom_title"
-        android:textSize="20sp"
-        android:gravity="center"/>
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="tên phòng"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/guestRoom_host"
@@ -34,29 +35,30 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:text="Chủ phòng"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
-        android:layout_marginRight="100dp"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
         android:text="Bạn"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_alignParentRight="true"/>
+        android:textColor="@color/color_text_1"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/guestRoom_hostName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/guestRoom_host"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:hint="pham trung hieu"
-        android:textSize="20sp"/>
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/guestRoom_hostLearnedWord"
@@ -90,11 +92,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="142dp"
-        android:layout_height="131dp"
-        app:srcCompat="@drawable/competition"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_below="@id/guestRoom_name"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/competition" />
 
     <TextView
         android:id="@+id/guestRoom_guessName"
@@ -140,11 +142,13 @@
         android:id="@+id/guestRoom_readyButton"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="Sẵn sàng"
-        android:textColor="@color/black"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_background"
+        android:text="Sẵn sàng"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/guestRoom_closeButton"
