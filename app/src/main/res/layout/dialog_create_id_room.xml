@@ -7,18 +7,21 @@
         android:id="@+id/title_dialog_createRoom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/light_blue_bg"
+        android:gravity="center"
         android:text="Tên phòng"
+        android:textColor="@color/color_text_1"
         android:textSize="25sp"
-        android:textColor="@color/black"
-        android:gravity="center"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/nameRoom_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập tên phòng..."
         android:layout_below="@+id/title_dialog_createRoom"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:hint="Nhập tên phòng..."
+        android:textColor="@color/color_text_1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,13 +35,19 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Tạo phòng"/>
+            android:background="@drawable/button_background"
+            android:text="Tạo phòng"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/cancel_button"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Hủy"/>
+            android:background="@drawable/button_background"
+            android:text="Hủy"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
     </LinearLayout>
 </RelativeLayout>
