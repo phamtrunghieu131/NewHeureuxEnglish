@@ -96,7 +96,7 @@ public class HostRoomActivity extends AppCompatActivity {
                 if(status == 0){
                     Toast.makeText(HostRoomActivity.this,"Hãy đợi người chơi khác...",Toast.LENGTH_SHORT).show();
                 }
-                if (status == 1){
+                if (status == 1 || status == 3){
                     Toast.makeText(HostRoomActivity.this,"Đối thủ chưa sẵn sàng...",Toast.LENGTH_SHORT).show();
                 }
                 if(status == 2){

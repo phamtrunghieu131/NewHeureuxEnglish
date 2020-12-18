@@ -34,6 +34,7 @@
             </TextView>
 
         <Button
+            android:id="@+id/save_button_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lưu"
@@ -74,7 +75,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="20dp">
+        android:paddingLeft="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <TextView
             android:layout_width="wrap_content"
@@ -82,9 +85,9 @@
             android:text="Tên của bạn">
         </TextView>
         <EditText
+            android:id="@+id/name_settingAct"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="nhungy411">
+            android:layout_height="wrap_content">
         </EditText>
         <LinearLayout
             android:layout_width="match_parent"
@@ -106,9 +109,9 @@
             android:text="Tuổi">
         </TextView>
         <EditText
+            android:id="@+id/age_settingAct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="20"
             android:textColor="#000">
         </EditText>
         <LinearLayout
@@ -131,9 +134,9 @@
             android:text="Email">
         </TextView>
         <TextView
+            android:id="@+id/email_settingAct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nhungy411@gmail.com"
             android:textColor="@color/black">
         </TextView>
         <LinearLayout

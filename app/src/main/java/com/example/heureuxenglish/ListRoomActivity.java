@@ -80,6 +80,9 @@ public class ListRoomActivity extends AppCompatActivity {
                     intent.putExtra("roomName",room.getName());
                     startActivity(intent);
                 }
+                else if(room.getStatus()==-1){
+                    Toast.makeText(ListRoomActivity.this,"Phòng không còn tồn tại",Toast.LENGTH_SHORT).show();
+                }
                 else {
                     Toast.makeText(ListRoomActivity.this,"Phòng đã đầy",Toast.LENGTH_SHORT).show();
                 }
