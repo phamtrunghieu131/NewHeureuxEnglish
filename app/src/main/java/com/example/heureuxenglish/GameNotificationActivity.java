@@ -89,13 +89,13 @@ public class GameNotificationActivity extends AppCompatActivity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDatabase.child("room").child(roomName).child("status").setValue(1);
                 if(type.equals("hostCount")){
                     Intent intent1 = new Intent(GameNotificationActivity.this,HostRoomActivity.class);
                     intent1.putExtra("roomName",roomName);
                     startActivity(intent1);
                 }
                 else{
+                    mDatabase.child("room").child(roomName).child("status").setValue(1);
                     Intent intent1 = new Intent(GameNotificationActivity.this,GuestRoomActivity.class);
                     intent1.putExtra("roomName",roomName);
                     startActivity(intent1);
